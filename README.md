@@ -25,9 +25,7 @@ PhD. Haitham Safwat Hamza, Vice-Dean for Postgrad and Research, Cairo University
 
 Here is a sample video demonstrating the FOTA system in action:
 
-<video width="600" controls>
-  <source src="FOTA Workflow.mp4" type="video/mp4">
-</video>
+[![FOTA Workflow Video](images/fota-video-thumbnail.png)](https://github.com/KareemMoneeam/FOTA/blob/main/FOTA%20Workflow.mp4)
 
 
 ---
