@@ -77,7 +77,7 @@ Django is used to develop the backend server that manages firmware updates and u
 ### 2. NodeMCU ESP32 - Gateway Communication
 NodeMCU ESP32 serves as the gateway between the vehicle's main ECU and the FOTA server, enabling Wi-Fi connectivity for updates.
 
-![NodeMCU ESP32](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/NodeMCU.jpg/1024px-NodeMCU.jpg)
+![NodeMCU ESP32](https://hit.ps/wp-content/uploads/2023/05/nodemcu-esp32-02.webp)
 
 ### 3. STM32F401RCT6 - Main and Application ECUs
 The STM32F401RCT6 microcontroller is the core component for managing the vehicle's embedded systems.
