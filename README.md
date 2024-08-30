@@ -1,5 +1,5 @@
-# FOTA
-# Firmware Over-The-Air (FOTA) System for Smart Vehicles
+# Firmware Over-The-Air (FOTA)
+# using Automotive CyberSecurity Techniques for Smart Vehicles
 
 ![Project Banner](Repo_Banner.png)
 
