@@ -1,5 +1,5 @@
 # Firmware Over-The-Air (FOTA)
-# using Automotive CyberSecurity Techniques for Smart Vehicles
+# With Automotive CyberSecurity Techniques for Smart Vehicles
 
 ![Project Banner](Repo_Banner.png)
 
