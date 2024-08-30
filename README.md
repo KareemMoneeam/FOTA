@@ -29,7 +29,6 @@ PhD. Haitham Safwat Hamza, Vice-Dean for Postgrad and Research, Cairo University
 6. [Software Components](#software-components)
 7. [Installation](#installation)
 8. [Usage](#usage)
-9. [Contributing](#contributing)
 
 ---
 
