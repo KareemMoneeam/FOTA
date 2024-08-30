@@ -18,6 +18,16 @@
 **Supervisor:**  
 PhD. Haitham Safwat Hamza, Vice-Dean for Postgrad and Research, Cairo University
 
+
+---
+
+## Sample Video of FOTA Workflow
+
+Here is a sample video demonstrating the FOTA system in action:
+
+[![FOTA Workflow Video](images/fota-video-thumbnail.png)](https://github.com/KareemMoneeam/FOTA/blob/main/FOTA%20Workflow.mp4)
+
+
 ---
 
 ## Table of Contents
