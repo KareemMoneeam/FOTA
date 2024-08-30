@@ -1,7 +1,7 @@
 # FOTA
 # Firmware Over-The-Air (FOTA) System for Smart Vehicles
 
-![Project Banner](Create_a_banner_for_a_GitHub_README_file_for_a_Fir.png)
+![Project Banner](Repo_Banner.png)
 
 ### Cairo University, Faculty of Computers and Artificial Intelligence  
 **Department of Information Technology**  
@@ -30,7 +30,6 @@ PhD. Haitham Safwat Hamza, Vice-Dean for Postgrad and Research, Cairo University
 7. [Installation](#installation)
 8. [Usage](#usage)
 9. [Contributing](#contributing)
-10. [License](#license)
 
 ---
 
@@ -118,7 +117,7 @@ To set up the FOTA system, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/fota-system.git
+   git clone https://github.com/KareemMoneeam/FOTA.git
 2. **Set up the hardware** according to the pinout configuration in the documentation.
 3. **Flash the microcontroller** with the bootloader firmware using the provided scripts.
 4. **Deploy the FOTA server** on your preferred hosting environment.
