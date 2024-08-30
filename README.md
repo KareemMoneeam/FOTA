@@ -61,7 +61,7 @@ The project employs a layered architecture, featuring two main views:
 - **Hardware Abstraction Layer (HAL):** Interfaces with physical hardware components.
 - **Application Layer:** Implements vehicle control and safety features.
 
-![System Architecture](Images/System Architecture.jpeg)
+![System Architecture](Images/System_Architecture.jpeg)
 
 ---
 
