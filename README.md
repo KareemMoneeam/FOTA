@@ -81,7 +81,7 @@ NodeMCU ESP32 serves as the gateway between the vehicle's main ECU and the FOTA 
 ### 3. STM32F401RCT6 - Main and Application ECUs
 The STM32F401RCT6 microcontroller is the core component for managing the vehicle's embedded systems.
 
-![STM32F401RCT6](https://microohm-eg.com/wp-content/uploads/2024/04/Pinout-Diagram.webp)
+![STM32F401RCT6](https://m.media-amazon.com/images/I/71RATawP1AL.jpg)
 
 ### 4. HC-05 Bluetooth Module
 Used for wireless communication between the vehicle and mobile applications.
