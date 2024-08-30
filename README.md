@@ -1,5 +1,5 @@
 # Firmware Over-The-Air (FOTA)
-# With Automotive CyberSecurity Techniques for Smart Vehicles
+# Using Automotive CyberSecurity Techniques for Smart Vehicles
 
 ![Project Banner](Images/Repo_Banner.png)
 
@@ -80,7 +80,7 @@ The project utilizes various technologies to create a robust FOTA system:
 ### 1. Django - FOTA Server
 Django is used to develop the backend server that manages firmware updates and user interactions.
 
-![Django Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/600px-Django_logo.svg.png)
+![Django Logo](https://abotyim.github.io/posts/python/django.png)
 
 ### 2. NodeMCU ESP32 - Gateway Communication
 NodeMCU ESP32 serves as the gateway between the vehicle's main ECU and the FOTA server, enabling Wi-Fi connectivity for updates.
