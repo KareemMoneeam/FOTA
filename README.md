@@ -53,7 +53,7 @@ The project employs a layered architecture, featuring two main views:
 - **Hardware Abstraction Layer (HAL):** Interfaces with physical hardware components.
 - **Application Layer:** Implements vehicle control and safety features.
 
-![System Architecture](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/System_Architecture.jpg/1024px-System_Architecture.jpg)
+![System Architecture](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJTySx_AbXD19hC6CMhbcDQIzkUmwrJiZcGmb2lrcWbrNncZNlgH3f_DXS7HoXKktYpSEXrcmqFauCNRdB4Prm59l0AjzhvJ7RXJmzgR9XRNFUlidY30767qorScpTyUgpzgwd_RoaQbLv/s1600/Untitled-1.jpg)
 
 ---
 
@@ -82,12 +82,12 @@ NodeMCU ESP32 serves as the gateway between the vehicle's main ECU and the FOTA 
 ### 3. STM32F401RCT6 - Main and Application ECUs
 The STM32F401RCT6 microcontroller is the core component for managing the vehicle's embedded systems.
 
-![STM32F401RCT6](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/STM32F401_Discovery_Board.jpg/1024px-STM32F401_Discovery_Board.jpg)
+![STM32F401RCT6](https://microohm-eg.com/wp-content/uploads/2024/04/Pinout-Diagram.webp)
 
 ### 4. HC-05 Bluetooth Module
 Used for wireless communication between the vehicle and mobile applications.
 
-![HC-05 Bluetooth Module](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/HC-05_Bluetooth_Module.jpg/800px-HC-05_Bluetooth_Module.jpg)
+![HC-05 Bluetooth Module](https://images.theengineeringprojects.com/image/main/2019/10/HC-05-Bluetooth-Module-Pinout-Datasheet-Features-Applications-1.jpg)
 
 ### 5. Mobile Application
 Developed to provide a user-friendly interface for managing updates and system notifications.
