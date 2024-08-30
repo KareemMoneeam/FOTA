@@ -1,0 +1,87 @@
+/* Adjust this in your register.css file */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Set a fixed width for the container */
+}
+
+h2 {
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form p {
+    width: 100%; /* Full width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label, input, button {
+    width: 100%; /* Full width for labels, inputs, and button */
+    margin-bottom: 10px; /* Spacing between form items */
+}
+
+input[type='text'], 
+input[type='email'], 
+input[type='password'], 
+input[type='submit'] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #222;
+    color: #fff;
+}
+
+button[type='submit'] {
+    padding: 15px 30px; /* Increase padding for a larger button */
+    font-size: 1rem; /* Adjust font size as necessary */
+    background-color: #ff9800;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px; /* You can increase this for a more pill-shaped button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Add some top margin if needed */
+    width: auto; /* Set width to auto or you can specify a width like 100% */
+}
+
+button[type='submit']:hover {
+    background-color: #ffa726;
+}
+
+
+/* Hide error list styles if you don't need them */
+.errorlist {
+    display: none;
+}
+
+/* Add this to remove default browser styles */
+input:focus, button:focus {
+    outline: none;
+}
+ul,span{
+    display: none;
+}

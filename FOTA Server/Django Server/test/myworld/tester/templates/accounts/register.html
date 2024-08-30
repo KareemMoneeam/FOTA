@@ -1,0 +1,32 @@
+{% load static %}
+<!-- accounts/templates/accounts/registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="{% static 'css/accounts/register.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form method="post">
+            {% csrf_token %}
+            {% block content %}
+                {{ form.as_p }}
+                <button type="submit">Register</button>
+            {% endblock %}
+        </form>
+    </div>
+    {% if form.errors %}
+    <div class="error-messages">
+        {% for field in form %}
+            {% for error in field.errors %}
+                <div>Custom message or styling for {{ field.label }}: {{ error }}</div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+{% endif %}
+</body>
+</html>

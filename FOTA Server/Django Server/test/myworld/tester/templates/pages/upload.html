@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/pages/upload.css' %}">
+  <h1>Upload File</h1>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="file">Select file:</label>
+    <input type="file" name="file" id="file">
+    <button type="submit">Upload</button>
+  </form>
+{% endblock %}

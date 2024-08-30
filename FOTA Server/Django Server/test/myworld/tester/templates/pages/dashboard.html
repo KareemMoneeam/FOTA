@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/pages/dashboard.css' %}">
+<h1>Uploaded Files</h1>
+<table>
+  <thead>
+    <tr>
+      <th>File Name</th>
+      <th>Upload Date</th>
+      <th>File Size</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for file in files %}
+    <tr>
+      <td>{{ file.file.name }}</td>
+      <td>{{ file.upload_date }}</td>
+      <td>{{ file.file.size|filesizeformat }}</td>
+      <td>
+        <a href="{% url 'file_download' file.id %}">Download</a>
+        
+        <!-- New option to send file -->
+        <form action="{% url 'send_file' file.id %}" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <select name="send_option" id="send_option">
+            <option value="critical_update">Critical Update</option>
+            <option value="add_feature">Add Feature</option>
+          </select>
+          <!-- Include the 'update' parameter -->
+          <input type="hidden" name="update" id="update" value="0"> <!-- Default value is 0 -->
+        
+          <button type="submit" onclick="setUpdateValue()">Send</button>
+        
+          <script>
+            function setUpdateValue() {
+              // Get the selected option from the form
+              var sendOption = document.getElementById("send_option").value;
+              
+              // Set the value of the 'update' parameter based on the selected option
+              if (sendOption === "critical_update") {
+                document.getElementById("update").value = "0"; // Set update value to 0 for critical_update
+              } else if (sendOption === "add_feature") {
+                document.getElementById("update").value = "1"; // Set update value to 1 for add_feature
+              }
+            }
+          </script>
+        </form>
+        
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

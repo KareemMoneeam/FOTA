@@ -1,0 +1,20 @@
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+nav span {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #76a9fa;
+}

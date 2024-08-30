@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="{% static 'css/accounts/login.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>OTP Verification</h2>
+        
+        <!-- Display QR Code if provided -->
+        {% if qr_code %}
+        <div><img src="data:image/png;base64,{{ qr_code|safe }}"></div>
+        
+        {% endif %}
+        
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Verify</button>
+        </form>
+        
+        {% if form.errors %}
+            <p class="error">Invalid OTP. Please try again.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

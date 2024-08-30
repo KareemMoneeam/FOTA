@@ -1,0 +1,29 @@
+{% load static %}
+
+
+<!-- accounts/templates/accounts/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="{% static 'css/accounts/login.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>User Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            {% block content %}
+                {{ form.as_p }}
+                <button type="submit">Login</button>
+            {% endblock %}
+        </form>
+        {% if invalid_creds %}
+            <p>Invalid username or password. Please try again.</p>
+        {% endif %}
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
+    </div>
+</body>
+</html>

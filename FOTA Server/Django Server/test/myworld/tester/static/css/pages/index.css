@@ -1,0 +1,17 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #ccc;
+    margin: 0;
+    padding: 20px;
+    height: auto;
+    background-image: url('../images/logo.png'); /* Adjust the path as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 150px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #4CAF50;
+}

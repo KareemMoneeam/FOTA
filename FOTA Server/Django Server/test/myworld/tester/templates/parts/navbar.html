@@ -1,0 +1,17 @@
+{% load static %}
+
+{% block content %} 
+<nav>
+    <link rel="stylesheet" href="{% static 'css/parts/nav.css' %}">
+    <span><a href="{% url 'index' %}">Home</a></span>
+    
+    <span><a href="{% url 'upload' %}">Upload</a></span>
+    <span><a href="{% url 'dashboard' %}">dashboard</a></span>
+    <span><a href="{% url 'reports' %}">Tickets</a></span>
+    <span><a href="{% url 'about' %}">About</a></span>
+    {% if user.is_authenticated %}
+        <span><a href="{% url 'logout' %}">Logout</a></span>
+    {% endif %}
+    
+</nav>  
+{% endblock %}

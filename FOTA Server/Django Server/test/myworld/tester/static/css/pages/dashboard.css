@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #ccc;
+    margin: 0;
+    padding: 20px;
+    height: auto;
+}
+
+#reportContent{
+    color: black;
+}
+h2{
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+a {
+    color: #76a9fa;
+    margin-right: 10px;
+}

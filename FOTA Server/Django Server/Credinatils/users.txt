@@ -1,0 +1,6 @@
+admin
+lo123456789
+
+
+
+curl -X POST http://127.0.0.1:8000/index/files/reports/reports_incomeing -d "username=mohamed gabr&report_text=my car is_not working"
