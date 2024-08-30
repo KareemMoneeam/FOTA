@@ -1,7 +1,7 @@
 # Firmware Over-The-Air (FOTA)
 # With Automotive CyberSecurity Techniques for Smart Vehicles
 
-![Project Banner](Repo_Banner.png)
+![Project Banner](Images/Repo_Banner.png)
 
 ### Cairo University, Faculty of Computers and Artificial Intelligence  
 **Department of Information Technology**  
