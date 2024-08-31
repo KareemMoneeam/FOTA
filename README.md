@@ -61,7 +61,7 @@ The project employs a layered architecture, featuring two main views:
 - **Hardware Abstraction Layer (HAL):** Interfaces with physical hardware components.
 - **Application Layer:** Implements vehicle control and safety features.
 
-![System Architecture](Images/System Architecture.jpeg)
+![System Architecture](Images/System_Architecture.jpeg)
 
 ---
 
@@ -95,7 +95,7 @@ The STM32F401RCT6 microcontroller is the core component for managing the vehicle
 ### 4. HC-05 Bluetooth Module
 Used for wireless communication between the vehicle and mobile applications.
 
-![HC-05 Bluetooth Module](Imgaes/HC05.jpg)
+![HC-05 Bluetooth Module](Images/HC05.jpg)
 
 ### 5. Mobile Application
 Developed to provide a user-friendly interface for managing updates and system notifications.
