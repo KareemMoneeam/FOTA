@@ -37,7 +37,7 @@ Here is a sample video demonstrating the FOTA system in action:
 4. [Technologies Used](#technologies-used)
 5. [Hardware Components](#hardware-components)
 6. [Software Components](#software-components)
-7. [FOTA System Flow].(#system-flow).
+7. [FOTA System Flow](#system-flow).
 8. [Installation](#installation)
 9. [Usage](#usage)
 
@@ -133,6 +133,8 @@ For critical updates, the process is automatic. The update is initiated without 
 ### Scenario 3: Issue Reporting & Support
 If a user reports a problem through the dashboard, the OEM assesses the issue and either provides a relevant firmware update or troubleshooting instructions. If an update is required, it is transmitted and flashed to the target ECU. If the issue persists, the Main ECU leverages Google Maps API to display nearby service stations based on the user's location.
 
+![Scenarios](Images/Scenarios.gif)
+
 ---
 
 ## Installation
@@ -152,4 +154,4 @@ To set up the FOTA system, follow these steps:
 3. **Accept or snooze** updates directly from the vehicle's dashboard interface.
 
 
-For more detailed information, please refer to the [documentation](https://raw.githubusercontent.com/KareemMoneeam/FOTA/blob/main/Final%20Documentation.pdf).
+For more detailed information, please refer to the [documentation](https://github.com/KareemMoneeam/FOTA/blob/main/Final%20Documentation.pdf).
