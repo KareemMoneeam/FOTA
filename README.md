@@ -37,8 +37,9 @@ Here is a sample video demonstrating the FOTA system in action:
 4. [Technologies Used](#technologies-used)
 5. [Hardware Components](#hardware-components)
 6. [Software Components](#software-components)
-7. [Installation](#installation)
-8. [Usage](#usage)
+7. [FOTA System Flow].(#system-flow).
+8. [Installation](#installation)
+9. [Usage](#usage)
 
 ---
 
@@ -120,6 +121,20 @@ Developed to provide a user-friendly interface for managing updates and system n
 
 ---
 
+## FOTA System Flow
+## Scenarios
+
+### Scenario 1: User-Driven Non-Critical Update
+The OEM introduces a non-critical firmware feature that vehicle owners can either accept or snooze through the user interface. If accepted, the firmware is transmitted via Node MCU, and the bootloader handles the update on the target ECU. If snoozed, a countdown timer starts in the Main ECU, prompting a reminder notification on the dashboard when the snooze period ends.
+
+### Scenario 2: Critical Update
+For critical updates, the process is automatic. The update is initiated without user intervention, and the Main ECU flashes the update to the target ECU. A dashboard notification informs the vehicle owner that the update is in progress, ensuring important updates are applied quickly and securely.
+
+### Scenario 3: Issue Reporting & Support
+If a user reports a problem through the dashboard, the OEM assesses the issue and either provides a relevant firmware update or troubleshooting instructions. If an update is required, it is transmitted and flashed to the target ECU. If the issue persists, the Main ECU leverages Google Maps API to display nearby service stations based on the user's location.
+
+---
+
 ## Installation
 
 To set up the FOTA system, follow these steps:
@@ -135,3 +150,6 @@ To set up the FOTA system, follow these steps:
 1. **Connect the vehicle's ECU** to the FOTA server using the NodeMCU ESP32.
 2. **Use the mobile application** to check for updates and manage notifications.
 3. **Accept or snooze** updates directly from the vehicle's dashboard interface.
+
+
+For more detailed information, please refer to the [documentation](https://raw.githubusercontent.com/KareemMoneeam/FOTA/blob/main/Final%20Documentation.pdf).
