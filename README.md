@@ -37,7 +37,7 @@ Here is a sample video demonstrating the FOTA system in action:
 4. [Technologies Used](#technologies-used)
 5. [Hardware Components](#hardware-components)
 6. [Software Components](#software-components)
-7. [FOTA System Flow](#system-flow).
+7. [FOTA System Flow](#system-flow)
 8. [Installation](#installation)
 9. [Usage](#usage)
 
