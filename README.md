@@ -38,8 +38,9 @@ Here is a sample video demonstrating the FOTA system in action:
 5. [Hardware Components](#hardware-components)
 6. [Software Components](#software-components)
 7. [FOTA System Flow](#fota-system-flow)
-8. [Installation](#installation)
-9. [Usage](#usage)
+8. [Automotive Cybersecurity](#automotive-cybersecurity)
+9. [Installation](#installation)
+10. [Usage](#usage)
 
 ---
 
@@ -134,6 +135,24 @@ For critical updates, the process is automatic. The update is initiated without 
 If a user reports a problem through the dashboard, the OEM assesses the issue and either provides a relevant firmware update or troubleshooting instructions. If an update is required, it is transmitted and flashed to the target ECU. If the issue persists, the Main ECU leverages Google Maps API to display nearby service stations based on the user's location.
 
 ![Scenarios](Images/Scenarios.gif)
+
+---
+
+## Automotive Cybersecurity
+
+The FOTA system employs robust automotive cybersecurity techniques to protect vehicles from potential cyber threats. These security measures include:
+
+1. **Secure Boot:**
+   - Ensures that only authenticated firmware is executed on the ECUs. The bootloader verifies the integrity and authenticity of the firmware before installation, preventing unauthorized or malicious software from running on the vehicle's system.
+
+2. **AES-256 Encryption:**
+   - Firmware updates are encrypted using AES-256 during transmission between the FOTA server and the vehicle’s ECU. This ensures that even if the data is intercepted, it remains unreadable to unauthorized entities.
+
+3. **RSA Digital Signatures:**
+   - All firmware updates are signed with RSA digital signatures. The ECU verifies the digital signature before accepting the update, ensuring the update's authenticity and protecting against tampering.
+
+4. **Firmware Integrity Checks:**
+   - After the update is applied, the system performs integrity checks to confirm that the firmware has not been altered. This ensures the vehicle is running the correct, unmodified version of the software.
 
 ---
 
